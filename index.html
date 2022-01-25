@@ -19,11 +19,10 @@
 				<h1>Virtual Exam Room</h1>
 				<nav>
 					<ul>
-						<li><a href="#intro">Welcome</a></li>
-						<li><a href="#one">Waiting Room</a></li>
+						<li><a href="#">Welcome</a></li>
+						<li><a href="waitingroom.html">Waiting Room</a></li>
 						<li><a href="examroom.html">Exam Room</a></li>
-						<li><a href="#work">[HEADING 3]</a></li>
-						<li><a href="#contact">[HEADING 4]</a></li>
+						<li><a href="#contact">Contact us!</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -38,7 +37,7 @@
 						objects you're liking to encounter on your next doctor's visit at BMC!
 					</p>
 					<footer>
-						<a href="#one" class="button style2 down">More</a>
+						<a href="#one" class="button style2 down" title="Next section."></a>
 					</footer>
 				</div>
 			</section>
@@ -52,8 +51,11 @@
 					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
 					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
 					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<div style="display: flex; justify-content: center;">
+						<a href="waitingroom.html" class="button" title="Click here to enter the Waiting Room!">Enter the Waiting Room!</a>
+					</div>
 				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
+				<a href="#two" class="button style2 down anchored" title="Next section."></a>
 			</section>
 
 		<!-- Two -->
@@ -65,12 +67,16 @@
 					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
 					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
 					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<div style="display: flex; justify-content: center;">
+						<a href="examroom.html" class="button" title="Click here to enter the Exam Room!">Enter the Exam Room!</a>
+					</div>
 				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
+				<a href="#contact" class="button style2 down anchored" title="Next section."></a>
 			</section>
 
+		<!-- This section can be re-vamped in the future, but for now, we don't have anything to put here. -->
 		<!-- Work -->
-			<section id="work" class="main style3 primary">
+			<!-- <section id="work" class="main style3 primary">
 				<div class="content">
 					<header>
 						<h2>My Work</h2>
@@ -79,7 +85,7 @@
 						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
 					</header>
 
-					<!-- Gallery  -->
+					Gallery 
 						<div class="gallery">
 							<article class="from-left">
 								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
@@ -102,7 +108,7 @@
 						</div>
 
 				</div>
-			</section>
+			</section> -->
 
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
@@ -112,14 +118,14 @@
 						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="contact.php">
+						<form method="post" action="https://formspree.io/f/xwkyvjdv">
 							<div class="fields">
 								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
 								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
 								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
 							</div>
 							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" value="Send Message" title="Click to send us your message."/></li>
 							</ul>
 						</form>
 					</div>

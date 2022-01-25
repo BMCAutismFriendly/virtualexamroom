@@ -27,15 +27,27 @@
             </nav>
         </header>
 
-        <!-- TODO: add image -->
-            <section id="examroom" class="main style1 dark fullscreen">
+            <section id="waitingroom" class="main style1 dark fullscreen">
             <div class="imgbox content">
                 <img src="images/lobby.jpg" alt="BMC exam room" usemap="#examroommap" class="map center-fit"></img>
                 <map name="examroommap">
                     <!-- TODO: add links -->
                     <area shape="poly" 
-                    coords="672,534,730,542,720,672,746,742,666,774,630,662,564,662,542,786,496,760,538,586,642,598" 
-                    onclick=" window.open('http://google.com','_blank')" href="#" title="click here blah blah!"></area>  
+                    coords="242,461,239,544,284,548,285,554,395,559,395,484,395,484" 
+                    onclick=" window.open('http://google.com','_blank')" href="#" title="Our fish tank!"
+                    ></area>  
+                    <area shape="poly" 
+                    coords="51,295,43,423,219,446,221,332" 
+                    onclick=" window.open('http://google.com','_blank')" href="#" title="Our TV!"></area>  
+                    <area shape="poly" 
+                    coords="332,629,332,638,350,640,352,740,363,740,365,640,444,640,448,744,460,742,459,641,609,629,607,614,559,617,501,619" 
+                    onclick=" window.open('http://google.com','_blank')" href="#" title="Our table where we have fun coloring books!"></area>
+                    <area shape="poly" 
+                    coords="621,350,619,594,665,594,671,546,681,538,733,550,771,552,811,556,863,558,863,578,855,630,903,626,909,670,963,664,999,654,985,418,983,382,917,312,629,342" 
+                    onclick=" window.open('http://google.com','_blank')" href="#" title="The check-in desk where your guardian will check you in for your appointment!"></area>   
+                    <area shape="poly" 
+                    coords="1373,265,1373,281,1385,281,1405,634,1489,664,1489,72" 
+                    onclick=" window.open('http://google.com','_blank')" href="#" title="Our window where you can see all of Boston!"></area> 
                 </map>
             </div>
         </section>
@@ -56,7 +68,7 @@
 
         </footer>
 
-<!-- Scripts -->
+    <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.poptrox.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -72,13 +84,13 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
         <script>
-            $(document).ready(function(e) {
-                $('.map').rwdImageMaps();
-                $('.map').maphilight(
-                    {strokeColor: 'f1e740', "strokeWidth":3, fillColor: "D3D3D3", fillOpacity: 0.3, fade: true, shadow: true}
-                );
-            });
-            </script>
-    
+        $(document).ready(function(e) {
+            $('.map').rwdImageMaps();
+            $('.map').maphilight(
+                {strokeColor: 'f1e740', "strokeWidth":3, fillColor: "D3D3D3", fillOpacity: 0.3, fade: true, shadow: true}
+            );
+        });
+        </script>
+
 </body>
 </html> 
