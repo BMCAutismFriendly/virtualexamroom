@@ -2254,9 +2254,9 @@ input, select, textarea {
 /* One */
 
 	#one {
-/* 		background: url("images/overlay.png"), url("../../images/lobby.jpg"); */
+		/* background: url("images/overlay.png"), url("../../images/lobby.jpg"); */
 		background: url("../../images/lobby.jpg");
-		background-size: 256px 256px, cover;
+		/* background-size: 256px 256px, cover; */
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
@@ -2264,8 +2264,10 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
+		/* background: url("images/overlay.png"), url("../../images/two.jpg"); */
+		background: url("../../images/test.jpg");
+		/* background-size: 256px 256px, cover; */
+		background-size: 1300px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
