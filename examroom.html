@@ -28,6 +28,17 @@
 				</nav>
 			</header>
 
+            <section id="examroom" class="main style1 dark fullscreen">
+            <div class="imgbox content">
+                <img src="images/lobby.jpg" alt="BMC exam room" usemap="#examroommap" class="map center-fit"></img>
+                <map name="examroommap">
+                    <area shape="poly" 
+                    coords="672,534,730,542,720,672,746,742,666,774,630,662,564,662,542,786,496,760,538,586,642,598" 
+                    onclick=" window.open('http://google.com','_blank')" href="#" title="click here blah blah!"></area>  
+                </map>
+            </div>
+        </section>
+
 		<!-- Footer -->
         <footer id="footer">
 
@@ -57,6 +68,18 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
+        <script>
+        $(document).ready(function(e) {
+            $('.map').rwdImageMaps();
+            $('.map').maphilight();
+        });
+        </script>
 
 </body>
 </html> 
