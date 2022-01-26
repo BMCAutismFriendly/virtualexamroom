@@ -6,6 +6,104 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* * {
+box-sizing: border-box;
+} */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+background-color: rgba(100, 100, 100, 0.486);
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+.prev {
+	left: 0;
+	border-radius: 0px 3px 3px 0px;
+	}	
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 0px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: rgba(226, 226, 226, 0.527);
+padding: 3px 16px;
+color: rgb(0, 0, 0);
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
 
 .imgbox {
 	display: grid;
@@ -34,7 +132,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
-
+	
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -2265,7 +2363,7 @@ input, select, textarea {
 
 	#one {
 		/* background: url("images/overlay.png"), url("../../images/lobby.jpg"); */
-		background: url("../../images/lobby.jpg");
+		background: url("../../images/lobby/lobby.jpg");
 		/* background-size: 256px 256px, cover; */
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2275,7 +2373,7 @@ input, select, textarea {
 
 	#two {
 		/* background: url("images/overlay.png"), url("../../images/two.jpg"); */
-		background: url("../../images/test.jpg");
+		background: url("../../images/examroom/2.jpg");
 		/* background-size: 256px 256px, cover; */
 		background-size: 1300px, cover;
 		background-attachment: fixed, fixed;

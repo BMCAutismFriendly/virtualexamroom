@@ -27,18 +27,116 @@
             </nav>
         </header>
 
-        <!-- TODO: add image -->
-            <section id="examroom" class="main style1 dark fullscreen">
+        <section id="waitingroom" class="main style1 dark fullscreen" style="margin: 0; padding: 10px 0px 50px 0px;">
             <div class="imgbox content">
-                <img src="images/lobby.jpg" alt="BMC exam room" usemap="#examroommap" class="map center-fit"></img>
-                <map name="examroommap">
-                    <!-- TODO: add links -->
-                    <area shape="poly" 
-                    coords="672,534,730,542,720,672,746,742,666,774,630,662,564,662,542,786,496,760,538,586,642,598" 
-                    onclick=" window.open('http://google.com','_blank')" href="#" title="click here blah blah!"></area>  
-                </map>
+                <div style="justify-content: center; text-align: center; background-color: rgba(226, 226, 226, 0.527)">
+                    <strong style="color: black;">Check out the Exam Room by hovering your mouse over and clicking on objects!</strong>
+                </div>            
+                <!-- Container for the image gallery -->
+            <div class="container">
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                    <img src="images/examroom/1.jpg" style="width:100%" alt="BMC exam room"  usemap="#map1" class="map center-fit"></img>
+                    <map name="map1">
+                        <area shape="poly" 
+                        coords="242,461,239,544,284,548,285,554,395,559,395,484,395,484" 
+                        href="#" title="Our fish tank!">
+                        </area>  
+                        <area shape="poly" 
+                        coords="51,295,43,423,219,446,221,332" 
+                        href="#" title="Our TV!"></area>  
+                        <area shape="poly" 
+                        coords="332,629,332,638,350,640,352,740,363,740,365,640,444,640,448,744,460,742,459,641,609,629,607,614,559,617,501,619" 
+                        href="#" title="Our table where we have fun coloring books!"></area>
+                        <area shape="poly" 
+                        coords="621,350,619,594,665,594,671,546,681,538,733,550,771,552,811,556,863,558,863,578,855,630,903,626,909,670,963,664,999,654,985,418,983,382,917,312,629,342" 
+                        href="#" title="The check-in desk where your guardian will check you in for your appointment!"></area>   
+                        <area shape="poly" 
+                        coords="1373,265,1373,281,1385,281,1405,634,1489,664,1489,72" 
+                        onclick=currentSlide(2)
+                        href="#" title="Our window where you can see all of Boston!"></area> 
+                    </map>    
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                    <img src="images/examroom/2.jpg" style="width:100%" alt="BMC exam room" class="map center-fit"></img>
+                    <map name="map1">
+                        <area shape="poly" 
+                        coords="242,461,239,544,284,548,285,554,395,559,395,484,395,484" 
+                        href="#" title="Our fish tank!">
+                        </area>  
+                        <area shape="poly" 
+                        coords="51,295,43,423,219,446,221,332" 
+                        href="#" title="Our TV!"></area>  
+                        <area shape="poly" 
+                        coords="332,629,332,638,350,640,352,740,363,740,365,640,444,640,448,744,460,742,459,641,609,629,607,614,559,617,501,619" 
+                        href="#" title="Our table where we have fun coloring books!"></area>
+                        <area shape="poly" 
+                        coords="621,350,619,594,665,594,671,546,681,538,733,550,771,552,811,556,863,558,863,578,855,630,903,626,909,670,963,664,999,654,985,418,983,382,917,312,629,342" 
+                        href="#" title="The check-in desk where your guardian will check you in for your appointment!"></area>   
+                        <area shape="poly" 
+                        coords="1373,265,1373,281,1385,281,1405,634,1489,664,1489,72" 
+                        onclick=currentSlide(2)
+                        href="#" title="Our window where you can see all of Boston!"></area> 
+                    </map>    
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="images/examroom/3.jpg" style="width:100%" alt="BMC exam room" class="map center-fit"></img>
+                    </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="images/examroom/4.jpg" style="width:100%" alt="BMC exam room" class="map center-fit"></img>
+                    </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                        <img src="images/examroom/5.jpg" style="width:100%" alt="BMC exam room" class="map center-fit"></img>
+                    </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                        <img src="images/examroom/6.jpg" style="width:100%" alt="BMC exam room" class="map center-fit"></img>
+                    </div>                      
+                        
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <strong id="caption"></strong>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/examroom/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Exam Room">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/examroom/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Exam Room">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/examroom/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Exam Room">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/examroom/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Exam Room">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/examroom/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Hallway">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/examroom/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Hallway">
+                </div>
+                </div>
             </div>
+        </div>
         </section>
+
 
 		<!-- Footer -->
         <footer id="footer">
@@ -56,7 +154,7 @@
 
         </footer>
 
-<!-- Scripts -->
+    <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.poptrox.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -72,13 +170,44 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
         <script>
-            $(document).ready(function(e) {
-                $('.map').rwdImageMaps();
-                $('.map').maphilight(
-                    {strokeColor: 'f1e740', "strokeWidth":3, fillColor: "D3D3D3", fillOpacity: 0.3, fade: true, shadow: true}
-                );
-            });
-            </script>
-    
+        $(document).ready(function(e) {
+            $('.map').rwdImageMaps();
+            $('.map').maphilight(
+                {strokeColor: 'f1e740', "strokeWidth":3, fillColor: "D3D3D3", fillOpacity: 0.3, fade: true, shadow: true}
+            );
+        });
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "flex";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
 </body>
 </html> 
